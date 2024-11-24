@@ -1,0 +1,152 @@
+body, html {
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+/* left side styling */
+.left_side {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 1fr;
+    width: 30%;
+    height: 100%; 
+    margin: 0px;
+    padding: 0px;
+    background-color: #d4f6ffe3;
+}
+
+.logo {
+    width: 40%;
+    padding-left: 1em;
+}
+
+.pic_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture {
+    width: 80%;
+}
+
+
+/* right side styling */
+.right_side {
+    width: 70vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    padding: 2em;
+    column-gap: 2.5em;
+    row-gap: 1em;
+}
+.header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-end;
+    gap: 1em;
+    margin-top: 1em;
+    margin-right: 2em;
+}
+h1 {
+    margin: 0px;
+    margin-top: 0.7em;
+    padding: 0px;
+    color: #133E87;
+    font-size: 1.5em;
+}
+p {
+    font-size: 0.9em;
+    color: rgb(147, 146, 146);
+
+}
+h1, label, p, .log_font, .info {
+    font-family: "Balsamiq Sans";
+}
+label {
+    font-size: 0.8em;
+    color: rgb(82, 80, 80);
+}
+.required_star {
+    color: #C7253E;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 0.2em;
+}
+
+/* span email and bio */
+#input_email, #input_bio, .submit {
+    grid-column: span 2;
+}
+
+
+/*input box */
+.box {
+    width: 100%;
+    height: 1.3em;
+}
+.box,#sourceOfIncome:hover {
+    border: 2px solid gray;
+}
+.box:focus {
+    outline: none;
+    border: 2px solid #1F509A;
+}
+::placeholder {
+    color: rgb(194, 194, 194);
+}
+
+/* log in button */
+.log_in, .create {
+    padding: 0.8em;
+    width: 8em;
+    border-radius: 20px;
+    border: 2px solid rgb(157, 156, 156);
+}
+.log_font, .info{
+    color: gray;
+}
+.box, #sourceOfIncome {
+    padding: 0.5em;
+    border-radius: 10px;
+    border: 2px solid rgb(200, 200, 200);
+}
+.submit{
+    display: flex;
+    justify-content: flex-end;
+}
+.create {
+    background-color: #2254a9;
+    border-style: none;
+    color: white;
+    font-family: "Balsamiq Sans";
+}
+.create:hover {
+    background-color: #2254a9ac;
+}
+.range {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-family: "Balsamiq Sans";
+    font-size: 0.8em;
+    color: #750c0a;
+
+}

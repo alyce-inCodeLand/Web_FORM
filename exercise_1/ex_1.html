@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Convergence&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sniglet:wght@400;800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Tilt+Neon&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    body, .login_info, .name, form{
+        display: flex;
+        flex-direction: column;
+    }
+    body {
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        font-family: "Balsamiq Sans";
+        font-size: 28px;
+        color: rgb(56, 55, 55);
+        margin: 0px;
+        margin-top: 10px;
+    }
+    label {
+        font-family: "Balsamiq Sans";
+        color: rgb(56, 55, 55);
+        font-size: 13px;
+    }
+    .login_info {
+        background-color: #D4F6FF;
+        border-radius: 20px;
+        height: 530px;
+        width: 450px;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+    .name {
+        gap: 10px;
+        width: 300px;
+    }
+    .input_name {
+        height: 35px;
+        padding-left: 10px;
+        border-radius: 10px;
+        border: 2px solid white;
+    }
+    .input_name:hover {
+        border: 2px solid #68bbf6;
+        box-shadow: none;
+    }
+    .input_name:focus {
+        outline: none;
+        border-color: rgb(7, 7, 164);
+    }
+    .rememberMe{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .check:checked {
+        accent-color: black;
+    }
+    .logIn {
+        width: 300px;
+        height: 35px;
+        border-radius: 10px;
+        background-color: #68bbf6;
+        border-style: none;
+        color: white;
+        font-weight: bold;
+    }
+    .log_in {
+        margin-top: 15px;
+    }
+    .logIn:hover {
+        background-color: #8acaf8;
+        cursor: pointer;
+    }
+    form {
+        gap: 20px;
+    }
+    
+</style>
+<body>
+    <div class="login_info">
+        <h1>Login to your account</h1>
+        <form>
+            <div class="name">
+                <label>Username</label>
+                <input type="text" class="input_name" placeholder="Enter your name">
+            </div>
+            <div class="name">
+                <label>Email</label>
+                <input type="text" class="input_name" placeholder="Enter your email">
+            </div>
+            <div class="name">
+                <label>Password</label>
+                <input type="text" class="input_name" placeholder="Enter your password">
+            </div>
+            <div class="rememberMe">
+                <input type="checkbox" class="check">
+                <label>Remember me!</label>
+            </div>
+            <div class="log_in">
+                <input type="button" value="Login" class="logIn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
